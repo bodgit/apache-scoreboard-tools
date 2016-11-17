@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 
 	printf("%s: %d worker%s in use | RunningWorkers=%d;%d;%d;;\n", status[rc], used,
 	    (used != 1) ? "s" : "",
-	    used,warning, critical);
+	    used, warning, critical);
 
 	return rc;
 }
