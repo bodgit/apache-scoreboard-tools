@@ -109,8 +109,9 @@ int main(int argc, char *argv[])
 		rc = 2;
 	}
 
-	printf("%s: %d worker%s in use\n", status[rc], used,
-	    (used != 1) ? "s" : "");
+	printf("%s: %d worker%s in use | RunningWorkers=%d;%d;%d;;\n", status[rc], used,
+	    (used != 1) ? "s" : "",
+	    used, warning, critical);
 
 	return rc;
 }
