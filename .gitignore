@@ -1,0 +1,3 @@
+*.o
+collectd_apache
+check_apache
